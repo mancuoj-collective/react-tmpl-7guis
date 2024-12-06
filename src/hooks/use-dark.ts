@@ -3,7 +3,7 @@ import { atomDark } from 'jotai-dark'
 
 const isDarkAtom = atomDark({
   disableTransition: true,
-  disableTransitionExclude: ['.i-lucide-sun', '.i-lucide-moon'],
+  disableTransitionExclude: ['.sun', '.moon'],
 })
 
 export function useDark() {

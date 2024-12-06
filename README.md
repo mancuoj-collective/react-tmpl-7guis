@@ -1,6 +1,3 @@
-# 7GUIs Challenge
+# 7GUIs
 
-- https://react.dev/reference/react
-- https://eugenkiss.github.io/7guis/tasks
-- https://cn.vuejs.org/examples/#counter
-- https://blog.axlight.com/posts/learning-react-state-manager-jotai-with-7guis-tasks
+A example project for [7GUIs](https://eugenkiss.github.io/7guis/tasks) built with [react-tmpl-lite](https://github.com/mancuoj-collective/react-tmpl-lite) 💗
