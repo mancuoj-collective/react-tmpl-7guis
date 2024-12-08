@@ -37,7 +37,7 @@ export function FlightBooker() {
   }
 
   return (
-    <Wrapper title="Book Flight">
+    <Wrapper title="Flight Booker">
       <div className="flex w-60 flex-col items-center justify-center gap-3 p-5">
         <Select value={type} onValueChange={setType}>
           <SelectTrigger>

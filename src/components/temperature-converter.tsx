@@ -33,7 +33,7 @@ export function TemperatureConverter() {
   }
 
   return (
-    <Wrapper title="TempConv">
+    <Wrapper title="Temperature Converter">
       <div className="flex items-center justify-center gap-3 p-5">
         <Input
           className="max-w-32 font-mono"
