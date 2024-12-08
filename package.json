@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "latest",
-    "@radix-ui/react-slider": "^1.2.1",
+    "@radix-ui/react-slider": "latest",
     "@radix-ui/react-slot": "latest",
     "class-variance-authority": "latest",
     "clsx": "latest",
