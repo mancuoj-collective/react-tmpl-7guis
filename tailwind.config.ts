@@ -10,7 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
+        mono: ['"Chivo Mono Variable"', ...defaultTheme.fontFamily.mono],
       },
       borderRadius: {
         lg: 'var(--radius)',

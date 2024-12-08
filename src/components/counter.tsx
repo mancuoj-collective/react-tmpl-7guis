@@ -14,7 +14,7 @@ export function Counter() {
   return (
     <Wrapper title="Counter">
       <div className="flex items-center justify-center gap-3 p-5">
-        <Input readOnly className="w-full md:w-32" value={count} />
+        <Input readOnly className="w-full font-mono md:w-32" value={count} />
         <Button variant="outline" onClick={() => setCount(count + 1)}>
           Count
         </Button>

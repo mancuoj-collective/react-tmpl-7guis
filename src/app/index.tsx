@@ -3,6 +3,7 @@ import { DarkModeToggle } from '@/components/dark-mode-toggle'
 import { AppProvider } from './provider'
 import { Counter } from '@/components/counter'
 import { TemperatureConverter } from '@/components/temperature-converter'
+import { FlightBooker } from '@/components/flight-booker'
 
 export function App() {
   return (
@@ -11,6 +12,9 @@ export function App() {
         <div className="flex flex-col gap-8 md:flex-row">
           <Counter />
           <TemperatureConverter />
+        </div>
+        <div className="flex flex-col gap-8 md:flex-row">
+          <FlightBooker />
         </div>
         <div className="space-x-2">
           <Button variant="outline" size="icon" asChild className="rounded-full">

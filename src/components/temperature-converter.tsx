@@ -36,13 +36,13 @@ export function TemperatureConverter() {
     <Wrapper title="TempConv">
       <div className="flex items-center justify-center gap-3 p-5">
         <Input
-          className="max-w-32"
+          className="max-w-32 font-mono"
           value={celsius}
           onChange={(e) => handleCelsiusChange(e.target.value)}
         />
         <div className="shrink-0 text-sm">Celsius =</div>
         <Input
-          className="max-w-32"
+          className="max-w-32 font-mono"
           value={fahrenheit}
           onChange={(e) => handleFahrenheitChange(e.target.value)}
         />

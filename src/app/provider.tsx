@@ -5,8 +5,8 @@ import { PropsWithChildren } from 'react'
 export function AppProvider({ children }: PropsWithChildren) {
   return (
     <Provider>
-      <div className="font-inter antialiased">{children}</div>
-      <Toaster richColors />
+      <div className="font-sans antialiased">{children}</div>
+      <Toaster richColors position="bottom-center" />
     </Provider>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import '@fontsource-variable/inter'
+import '@fontsource-variable/chivo-mono'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import { App } from '@/app'
 import './globals.css'
