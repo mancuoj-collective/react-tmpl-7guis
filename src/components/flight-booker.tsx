@@ -31,7 +31,7 @@ export function FlightBooker({ className }: { className?: string }) {
 
   const handleBook = () => {
     const message = isReturn
-      ? `You have booked a return flight on ${format(date, 'dd.MM.yyyy')} to ${format(returnDate, 'dd.MM.yyyy')}.`
+      ? `You have booked a return flight on ${format(date, 'dd.MM.yyyy')} - ${format(returnDate, 'dd.MM.yyyy')}.`
       : `You have booked a one-way flight on ${format(date, 'dd.MM.yyyy')}.`
     toast.success(message)
   }

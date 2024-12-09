@@ -24,7 +24,8 @@
     "react-day-picker": "^8",
     "react-dom": "latest",
     "react-router": "latest",
-    "sonner": "latest"
+    "sonner": "latest",
+    "usehooks-ts": "latest"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "latest",
