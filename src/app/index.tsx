@@ -12,7 +12,7 @@ import { Cells } from '@/components/cells'
 export function App() {
   return (
     <AppProvider>
-      <div className="mx-auto flex min-h-svh max-w-3xl flex-col gap-8 p-10">
+      <div className="mx-auto flex min-h-svh max-w-4xl flex-col gap-8 p-12">
         <div className="grid gap-4 md:grid-cols-12">
           <Counter className="md:col-span-4" />
           <TemperatureConverter className="md:col-span-8" />
