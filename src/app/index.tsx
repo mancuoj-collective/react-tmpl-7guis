@@ -20,7 +20,7 @@ export function App() {
           <Timer className="md:col-span-7" />
           <CRUD className="md:col-span-6" />
           <CircleDrawer className="md:col-span-6" />
-          <Cells className="md:col-span-12" />
+          <Cells className="overflow-x-scroll scrollbar-none md:col-span-full" />
         </div>
         <div className="space-x-2 text-right">
           <DarkModeToggle className="rounded-full" />

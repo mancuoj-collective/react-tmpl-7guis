@@ -135,7 +135,7 @@ export function CircleDrawer({ className }: { className?: string }) {
             onClick={(e) => e.stopPropagation()}
           >
             <p className="text-center text-sm">
-              Adjust diameter of circle at
+              Adjust diameter of circle at{' '}
               <span className="font-mono">
                 ({circles[selectedIndex].cx.toFixed(0)}, {circles[selectedIndex].cy.toFixed(0)}).
               </span>

@@ -65,7 +65,7 @@
   }
 
   html {
-    @apply scroll-smooth scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted-foreground;
+    @apply scroll-smooth scrollbar-thin scrollbar-track-transparent scrollbar-thumb-border scrollbar-thumb-rounded-full;
   }
 
   body {
