@@ -10,6 +10,7 @@
     "@number-flow/react": "latest",
     "@radix-ui/react-popover": "latest",
     "@radix-ui/react-progress": "latest",
+    "@radix-ui/react-scroll-area": "latest",
     "@radix-ui/react-select": "latest",
     "@radix-ui/react-slider": "latest",
     "@radix-ui/react-slot": "latest",

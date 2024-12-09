@@ -17,7 +17,7 @@ import { useInterval } from 'usehooks-ts'
  * 5. Clicking R will reset e to zero.
  */
 export function Timer({ className }: { className?: string }) {
-  const [duration, setDuration] = useState(10)
+  const [duration, setDuration] = useState(60)
   const [elapsedTime, setElapsedTime] = useState(0)
   const isRunning = elapsedTime < duration
 
@@ -52,24 +52,18 @@ export function Timer({ className }: { className?: string }) {
             continuous
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-4">
-          <div className="flex w-full items-center gap-2">
-            <p className="w-24 shrink-0 text-sm">Elapsed Time</p>
-            <Progress
-              value={Math.min((elapsedTime / duration) * 100, 100)}
-              className="h-5 rounded"
-            />
-          </div>
-          <div className="flex w-full items-center gap-2">
-            <p className="w-24 shrink-0 text-sm">Duration</p>
-            <Slider
-              defaultValue={[duration]}
-              onValueChange={(value) => setDuration(value[0])}
-              min={1}
-              max={99}
-              step={1}
-            />
-          </div>
+        <div className="flex flex-col items-center justify-center gap-5">
+          <Progress
+            value={Math.min((elapsedTime / duration) * 100, 100)}
+            className="h-5 w-full rounded"
+          />
+          <Slider
+            defaultValue={[duration]}
+            onValueChange={(value) => setDuration(value[0])}
+            min={1}
+            max={99}
+            step={1}
+          />
           <Button variant="outline" className="w-full" onClick={() => setElapsedTime(0)}>
             Reset
           </Button>

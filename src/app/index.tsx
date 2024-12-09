@@ -12,15 +12,15 @@ import { Cells } from '@/components/cells'
 export function App() {
   return (
     <AppProvider>
-      <div className="mx-auto flex min-h-svh max-w-3xl flex-col gap-8 p-12">
-        <div className="grid gap-4 md:grid-cols-9">
-          <Counter className="md:col-span-3" />
-          <TemperatureConverter className="md:col-span-6" />
-          <FlightBooker className="md:col-span-4" />
-          <Timer className="md:col-span-5" />
-          <CRUD className="md:col-span-3" />
-          <CircleDrawer className="md:col-span-3" />
-          <Cells className="md:col-span-3" />
+      <div className="mx-auto flex min-h-svh max-w-3xl flex-col gap-8 p-10">
+        <div className="grid gap-4 md:grid-cols-12">
+          <Counter className="md:col-span-4" />
+          <TemperatureConverter className="md:col-span-8" />
+          <FlightBooker className="md:col-span-5" />
+          <Timer className="md:col-span-7" />
+          <CRUD className="md:col-span-6" />
+          <CircleDrawer className="md:col-span-6" />
+          <Cells className="md:col-span-12" />
         </div>
         <div className="space-x-2 text-right">
           <DarkModeToggle className="rounded-full" />
