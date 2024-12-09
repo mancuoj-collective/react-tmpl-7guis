@@ -12,27 +12,23 @@ import { Cells } from '@/components/cells'
 export function App() {
   return (
     <AppProvider>
-      <div className="flex min-h-svh flex-col items-center gap-8 p-12">
-        <div className="flex flex-col gap-8 md:flex-row">
-          <Counter />
-          <TemperatureConverter />
+      <div className="mx-auto flex min-h-svh max-w-3xl flex-col gap-8 p-12">
+        <div className="grid gap-4 md:grid-cols-9">
+          <Counter className="md:col-span-3" />
+          <TemperatureConverter className="md:col-span-6" />
+          <FlightBooker className="md:col-span-4" />
+          <Timer className="md:col-span-5" />
+          <CRUD className="md:col-span-3" />
+          <CircleDrawer className="md:col-span-3" />
+          <Cells className="md:col-span-3" />
         </div>
-        <div className="flex flex-col gap-8 md:flex-row">
-          <FlightBooker />
-          <Timer />
-        </div>
-        <div className="flex flex-col gap-8 md:flex-row">
-          <CRUD />
-          <CircleDrawer />
-          <Cells />
-        </div>
-        <div className="space-x-2">
+        <div className="space-x-2 text-right">
+          <DarkModeToggle className="rounded-full" />
           <Button variant="outline" size="icon" asChild className="rounded-full">
             <a href="https://github.com/mancuoj-collective/react-tmpl-7guis">
               <span className="i-carbon-logo-github" />
             </a>
           </Button>
-          <DarkModeToggle className="rounded-full" />
         </div>
       </div>
     </AppProvider>

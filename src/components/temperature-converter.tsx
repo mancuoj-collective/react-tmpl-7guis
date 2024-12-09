@@ -12,7 +12,7 @@ import { Wrapper } from './wrapper'
  * The formula for converting a temperature C in Celsius into a temperature F in Fahrenheit is C = (F - 32) * (5/9)
  * and the dual direction is F = C * (9/5) + 32.
  */
-export function TemperatureConverter() {
+export function TemperatureConverter({ className }: { className?: string }) {
   const [celsius, setCelsius] = useState('')
   const [fahrenheit, setFahrenheit] = useState('')
 
@@ -33,16 +33,16 @@ export function TemperatureConverter() {
   }
 
   return (
-    <Wrapper title="Temperature Converter">
+    <Wrapper title="Temperature Converter" className={className}>
       <div className="flex items-center justify-center gap-3 p-5">
         <Input
-          className="max-w-32 font-mono"
+          className="font-mono"
           value={celsius}
           onChange={(e) => handleCelsiusChange(e.target.value)}
         />
         <div className="shrink-0 text-sm">Celsius =</div>
         <Input
-          className="max-w-32 font-mono"
+          className="font-mono"
           value={fahrenheit}
           onChange={(e) => handleFahrenheitChange(e.target.value)}
         />

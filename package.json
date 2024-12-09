@@ -7,6 +7,7 @@
     "format": "prettier --cache --write ."
   },
   "dependencies": {
+    "@number-flow/react": "latest",
     "@radix-ui/react-popover": "latest",
     "@radix-ui/react-progress": "latest",
     "@radix-ui/react-select": "latest",
@@ -20,15 +21,15 @@
     "jotai-effect": "latest",
     "lucide-react": "latest",
     "react": "latest",
-    "react-day-picker": "latest",
+    "react-day-picker": "^8",
     "react-dom": "latest",
     "react-router": "latest",
     "sonner": "latest"
   },
   "devDependencies": {
+    "@egoist/tailwindcss-icons": "latest",
     "@fontsource-variable/chivo-mono": "latest",
     "@fontsource-variable/inter": "latest",
-    "@egoist/tailwindcss-icons": "latest",
     "@iconify-json/carbon": "latest",
     "@mancuoj/prettier-config": "latest",
     "@types/node": "latest",

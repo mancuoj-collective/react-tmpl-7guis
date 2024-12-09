@@ -23,7 +23,7 @@ import { toast } from 'sonner'
  * 4. When clicking B a message is displayed informing the user of his selection (e.g. “You have booked a one-way flight on 04.04.2014.”).
  * 5. Initially, C has the value “one-way flight” and T1 as well as T2 have the same (arbitrary) date (it is implied that T2 is disabled).
  */
-export function FlightBooker() {
+export function FlightBooker({ className }: { className?: string }) {
   const [type, setType] = useState('one-way')
   const [date, setDate] = useState<Date>(new Date())
   const [returnDate, setReturnDate] = useState<Date>(new Date())
@@ -37,15 +37,15 @@ export function FlightBooker() {
   }
 
   return (
-    <Wrapper title="Flight Booker">
-      <div className="flex w-60 flex-col items-center justify-center gap-3 p-5">
+    <Wrapper title="Flight Booker" className={className}>
+      <div className="flex flex-col items-center justify-center gap-3 p-5">
         <Select value={type} onValueChange={setType}>
           <SelectTrigger>
             <SelectValue />
           </SelectTrigger>
           <SelectContent className="font-sans">
-            <SelectItem value="one-way">one-way flight</SelectItem>
-            <SelectItem value="return">return flight</SelectItem>
+            <SelectItem value="one-way">One-way flight</SelectItem>
+            <SelectItem value="return">Return flight</SelectItem>
           </SelectContent>
         </Select>
 
